@@ -98,7 +98,10 @@ Result SetAdptArrayAt(PAdptArray padptArray, int index, PElement pelement)
         {
             padptArray->del_func(padptArray->array[index]);
         }
-        padptArray->array[index] = padptArray->copy_func(pelement);
+        if (pelement != NULL)
+        {
+            padptArray->array[index] = padptArray->copy_func(pelement);
+        }
         return SUCCESS;
     }
     // defultivy

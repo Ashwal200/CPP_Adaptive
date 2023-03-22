@@ -100,7 +100,7 @@ PElement GetAdptArrayAt(PAdptArray padptArray, int index)
         return NULL;
     }
 
-    if (index < 0)
+    if (index < 0 || padptArray->size <= index)
     {
         return NULL;
     }

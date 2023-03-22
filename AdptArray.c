@@ -17,13 +17,13 @@ PAdptArray CreateAdptArray(COPY_FUNC copy, DEL_FUNC del, PRINT_FUNC print_f)
     // alloc the struct
     PAdptArray new_AdptArray = (PAdptArray)malloc(sizeof(AdptArray));
     // alloc the array
-    new_AdptArray->array = (PElement *)calloc(1, sizeof(PElement));
+    new_AdptArray->array = (PElement *)calloc(0, sizeof(PElement));
     // define the three funcrions
     new_AdptArray->copy_func = copy;
     new_AdptArray->del_func = del;
     new_AdptArray->print_func = print_f;
     // define the size
-    new_AdptArray->size = 1;
+    new_AdptArray->size = 0;
     return new_AdptArray;
 };
 void DeleteAdptArray(PAdptArray padptArray)

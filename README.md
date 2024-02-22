@@ -1,4 +1,4 @@
-<div dir="rtl">
+<div >
 ## Adaptive Array in C
 This project implements a general adaptive array in the C language. An adaptive array dynamically changes its size to accommodate any reference to a negative index, returning NULL for indices where no value has been placed.
 

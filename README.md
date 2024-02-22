@@ -1,20 +1,18 @@
 <div dir="rtl" lang="he">
 
 # ADT
-במטלה זו תממשו מערך אדפטיבי כללי בשפת C. 
-מערך אדפטיבי הינו מערך שמשנה את גודלו כך שכל פנייה לאינדק אי שלילי היא תקינה. כאשר פונים לאינדקס בו לא הושם ערך אז מוחזר NULL
 
-תיאור אופן הפעולה המלא נמצא בקובץ ה
-[ADT_definition.pdf](ADT_definition.pdf) 
-המצורף.
 
-שימו לב אין כל מידע מקדים על סוג המבנים שיכנסו למערך. בתוכנית הדמו יש שימוש בשני מבנים שונים. אין לשנות את הקבציים הקיימים פרט לקובץ הAdptArray.c
+## Adaptive Array in C
+This project implements a general adaptive array in the C language. An adaptive array dynamically changes its size to accommodate any reference to a negative index, returning NULL for indices where no value has been placed.
 
-כדי לראות איך ,תוכנית אמורה לעבוד, ראו בקובץ
-[Demo.c](Demo.c)
-המצורף.
+# Overview
+The adaptive array provides the following functionalities:
 
- עליכם לכתוב את הקבצים הדרושים כך שהפקודות הבאות יעבדו ללא שגיאות קימפול, זמן ריצה או דליפות זיכרון.:
+Dynamically resizes itself to handle negative indices.
+Returns NULL for indices where no value has been set.
+Supports insertion and retrieval of values at arbitrary indices.
+For detailed information on the operations and usage of the adaptive array, refer to the ADT_definition.pdf file attached.
 
 <div dir='ltr'>
 
@@ -24,23 +22,6 @@
 
 </div>
 
-עליכם לכתוב את  הקבצים הבאים:
 
-* AdptArray.c - מימוש הפונקציות הנדרשות. 
-
-שימו לב:
-אין לשנות קבצים קיימים, אלא רק להוסיף קבצים חדשים.
-מערכת הבדיקה האוטומטית מעתיקה מחדש את כל הקבצים הקיימים על-גבי הפתרון שאתם מגישים,
-ולכן כל שינוי שתעשו בקבצים הקיימים יימחק.
-
-ההגשה תתבצעה בגיט. בדיוק כמו בתכנות מערכות א.
-עליכם להגיש קובץ טקסט שמכיל 3 שורות.
-
-לינק לריפוזיטורי
-	
-מזהה הקומיט
-	
-תעודת זהות
-	
 
 </div>
